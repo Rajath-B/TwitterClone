@@ -1,0 +1,201 @@
+/*
+common 
+*********************/
+
+html,
+body {
+  height: auto;
+}
+.content {
+  max-width: 600px;
+  height: fit-content;
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+/*
+Post
+*********************/
+
+.post_form {
+  padding: 20px 40px;
+  border-bottom: 1px solid white;
+  height: 150px;
+}
+.post_form input {
+  width: 88%;
+  margin-bottom: 1%;
+  padding: 10px;
+  background-color: #b3ebda;
+  border-radius: 8px;
+}
+
+.post_form input .my-icon1 {
+  width: 200px;
+}
+
+.post_form textarea .text1 {
+  width: 88%;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.posts ul {
+  padding: 0;
+}
+
+.posts li {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 40px;
+  list-style: none;
+  position: relative;
+}
+
+.posts li .menu_icon {
+  width: 20px;
+  position: absolute;
+  top: 18px;
+  right: 30px;
+}
+
+.posts li .menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.posts li .menu a {
+  text-decoration: none;
+}
+
+.posts li .logo {
+  flex-basis: 15%;
+}
+
+.posts .name_body .post-border {
+  width: 30%;
+  border-radius: 7px;
+}
+
+.posts li .logo img {
+  width: 60%;
+}
+
+.posts li .name_body {
+  flex-basis: 85%;
+}
+.posts li .name_body .name {
+  font-weight: bold;
+}
+
+.posts li .name_body .datetime {
+  color: gray;
+}
+#likes-form {
+  padding-top: 20px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .posts li .name_body .name {
+    font-size: 20px;
+  }
+}
+.tweet {
+  border-radius: 10px;
+  color: rgb(27, 121, 214);
+}
+button {
+  padding: 6px 17px;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  float: right;
+  margin-top: 5px;
+  margin-inline-end: -28px;
+  margin-right: 34px;
+}
+input .my-icon {
+  background-color: white;
+  border: 2px none black;
+  border-radius: 0px;
+}
+.main-header {
+  padding: 5px 40px 5px;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.main-header img .logo {
+  width: 50px;
+  margin-right: 20px;
+}
+.prof {
+  width: 50px;
+  margin-right: 20px;
+}
+a.cancel-button {
+  width: 60px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px none #ccc;
+  background-color: grey;
+  border-radius: 8px;
+}
+.post-border {
+  width: 70%;
+  border-radius: 7px;
+}
+.post_form {
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+  height: fit-content;
+}
+.input {
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px none #ccc;
+  background-color: #a4cbdd;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.update-button {
+  width: 11%;
+  height: 27px;
+  margin-top: 2%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px none #ccc;
+  background-color: dodgerblue;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+.inputimage {
+  background-color: white;
+  border: 2px none black;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.like-button {
+  float: none;
+  float: none;
+  background-color: white;
+  color: rgb(241, 135, 167);
+  font-size: xx-large;
+  border: 1px black;
+  width: 3px;
+}
