@@ -1,52 +1,30 @@
 {% extends "base.html"%} {% block content %} {% load static %}
 <section class="content">
   <div class="main-header">
-    <img
-      src="{% static 'img/twitter.png' %}"
-      class="logo"
-      style="width: 50px"
-    />
+    <img src="{% static 'img/twitter.png' %}" class="logo" style="width: 50px" />
     <h1>EDIT</h1>
   </div>
+  <br>
   <section class="post_formm">
-    <form
-      action="/edit/{{post.id}}/"
-      method="POST"
-      enctype="multipart/form-data"
-      style="margin-left: 8px"
-    >
+    <form action="/edit/{{post.id}}/" method="POST" enctype="multipart/form-data" style="margin-left: 8px">
       {% csrf_token %}
 
-      <input
-        class="input"
-        type="text"
-        name="name"
-        placeholder="Name"
-        value="{{post.name}}"
-        required
-      />
-      <input
-        class="text1"
-        name="body"
-        placeholder="{{post.body}}"
-        style="width: 73%"
-      ></input>
+      <input class="input" type="text" name="name" placeholder="Name" value="{{post.name}}" required />
+
+      <input class="text1" name="body" placeholder="body" value="{{post.body}}" style="width: 73%" required />
       <label for="{{post.name}}"></label>
       {% if post.image.url %}
-      <img class="post-border" src="{{ post.image.url }}" style="margin-left: 3%;" />
+      <br>
+      <img class="post-border" src="{{ post.image.url }}" style="width:30%; border-radius: 7px;" />
       {% endif %}
-      <div class="flex">
-        <input class="inputimage" name="image" type="file"  />
-        <div class="b1">
-          <a
-            class="update-button"
-            href="{%  url 'index' %}"
-            style="text-decoration: none; color: white"
-            >Cancel</a
-          >
-          <input class="update-button" type="submit" value="Update" />
-        </div>
+      <br>
+      <input class="inputimage" name="image" type="file" />
+      <div class="tweet">
+        <a class="update-button" href="{%  url 'index' %}"
+          style="text-decoration: none; color: white; background-color: grey;">Cancel</a>
+        <input class="update-button" type="submit" value="Update" />
       </div>
+
     </form>
   </section>
 </section>

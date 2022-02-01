@@ -10,18 +10,33 @@ body {
   max-width: 600px;
   height: fit-content;
   margin: 0 auto;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.content h1 {
+  padding-left: 10px;
 }
 /*
 Post
 *********************/
+.post_formm {
+  padding: 20px 40px;
+}
+
+.post_formm .tweet {
+  display: inline;
+}
+
+.post_formm .text1 {
+  padding-bottom: 20px;
+}
 
 .post_form {
   padding: 20px 40px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ccc;
   height: 150px;
 }
 .post_form input {
@@ -32,14 +47,17 @@ Post
   border-radius: 8px;
 }
 
-.post_form input .my-icon1 {
-  width: 200px;
+input.my-icon1 {
+  width: 50%;
 }
 
 .post_form textarea .text1 {
   width: 88%;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #ccc;
+}
+.post_form .tweet {
+  display: inline;
 }
 
 .posts ul {
@@ -101,7 +119,6 @@ Post
   color: gray;
 }
 #likes-form {
-  padding-top: 20px;
   border-radius: 15px;
 }
 
@@ -126,12 +143,12 @@ button {
 }
 input .my-icon {
   background-color: white;
-  border: 2px none black;
+  border: 2px none #ccc;
   border-radius: 0px;
 }
 .main-header {
   padding: 5px 40px 5px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -168,7 +185,7 @@ a.cancel-button {
   border: 1px none #ccc;
   background-color: #a4cbdd;
   border-radius: 8px;
-  border: 1px solid black;
+  border: 1px solid #ccc;
 }
 
 .update-button {
@@ -185,7 +202,7 @@ a.cancel-button {
 }
 .inputimage {
   background-color: white;
-  border: 2px none black;
+  border: 2px none #ccc;
   border-radius: 0px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -196,6 +213,7 @@ a.cancel-button {
   background-color: white;
   color: rgb(241, 135, 167);
   font-size: xx-large;
-  border: 1px black;
+  border: 1px #ccc;
   width: 3px;
+  padding-top: 5px;
 }
