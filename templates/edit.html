@@ -13,9 +13,10 @@
 
       <input class="text1" name="body" placeholder="body" value="{{post.body}}" style="width: 73%" required />
       <label for="{{post.name}}"></label>
+      <br />
       {% if post.image.url %}
-      <br>
-      <img class="post-border" src="{{ post.image.url }}" style="width:30%; border-radius: 7px;" />
+
+      <img class="post-border" src="{{ post.image.url }}" style="width:250px; height: 200px; padding-top: 10px;" />
       {% endif %}
       <br>
       <input class="inputimage" name="image" type="file" />

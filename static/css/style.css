@@ -45,10 +45,12 @@ Post
   padding: 10px;
   background-color: #b3ebda;
   border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 input.my-icon1 {
   width: 50%;
+  border: hidden;
 }
 
 .post_form textarea .text1 {
@@ -140,6 +142,7 @@ button {
   margin-top: 5px;
   margin-inline-end: -28px;
   margin-right: 34px;
+  border: 1px solid dodgerblue;
 }
 input .my-icon {
   background-color: white;
